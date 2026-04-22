@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
@@ -52,6 +52,7 @@ import { AuthService } from '../../../core/services/auth.service';
 export class LoginComponent {
   private fb = inject(FormBuilder);
   private authService = inject(AuthService);
+  private translate = inject(TranslateService);
 
   error = '';
   form = this.fb.group({
@@ -64,7 +65,7 @@ export class LoginComponent {
     const { email, password } = this.form.value;
     const success = this.authService.login(email!, password!);
     if (!success) {
-      this.error = 'Login failed';
+      this.error = this.translate.instant('errors.loginFailed');
     }
   }
 }

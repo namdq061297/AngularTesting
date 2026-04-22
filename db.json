@@ -1,0 +1,29 @@
+{
+  "products": [
+    { "id": 1, "name": "iPhone 15 Pro", "category": "Electronics", "price": 999, "stock": 50, "description": "Latest iPhone with titanium design", "imageUrl": "https://picsum.photos/seed/iphone/400/300", "createdAt": "2024-01-15T10:00:00Z" },
+    { "id": 2, "name": "Samsung Galaxy S24", "category": "Electronics", "price": 799, "stock": 30, "description": "Android flagship with AI features", "imageUrl": "https://picsum.photos/seed/samsung/400/300", "createdAt": "2024-01-16T10:00:00Z" },
+    { "id": 3, "name": "MacBook Air M3", "category": "Electronics", "price": 1299, "stock": 20, "description": "Ultra-thin laptop with M3 chip", "imageUrl": "https://picsum.photos/seed/macbook/400/300", "createdAt": "2024-01-17T10:00:00Z" },
+    { "id": 4, "name": "Sony WH-1000XM5", "category": "Electronics", "price": 349, "stock": 100, "description": "Industry-leading noise canceling headphones", "imageUrl": "https://picsum.photos/seed/sony/400/300", "createdAt": "2024-01-18T10:00:00Z" },
+    { "id": 5, "name": "Nike Air Max 270", "category": "Clothing", "price": 150, "stock": 200, "description": "Comfortable running shoes with air cushioning", "imageUrl": "https://picsum.photos/seed/nike/400/300", "createdAt": "2024-01-19T10:00:00Z" },
+    { "id": 6, "name": "Levi\u2019s 501 Jeans", "category": "Clothing", "price": 70, "stock": 150, "description": "Classic straight fit jeans", "imageUrl": "https://picsum.photos/seed/levis/400/300", "createdAt": "2024-01-20T10:00:00Z" },
+    { "id": 7, "name": "Adidas Hoodie", "category": "Clothing", "price": 85, "stock": 80, "description": "Comfortable cotton blend hoodie", "imageUrl": "https://picsum.photos/seed/adidas/400/300", "createdAt": "2024-01-21T10:00:00Z" },
+    { "id": 8, "name": "The Great Gatsby", "category": "Books", "price": 12, "stock": 300, "description": "Classic American novel by F. Scott Fitzgerald", "imageUrl": "https://picsum.photos/seed/gatsby/400/300", "createdAt": "2024-01-22T10:00:00Z" },
+    { "id": 9, "name": "Clean Code", "category": "Books", "price": 35, "stock": 150, "description": "A handbook of agile software craftsmanship", "imageUrl": "https://picsum.photos/seed/cleancode/400/300", "createdAt": "2024-01-23T10:00:00Z" },
+    { "id": 10, "name": "Atomic Habits", "category": "Books", "price": 18, "stock": 250, "description": "Tiny changes, remarkable results", "imageUrl": "https://picsum.photos/seed/atomic/400/300", "createdAt": "2024-01-24T10:00:00Z" },
+    { "id": 11, "name": "JavaScript: The Good Parts", "category": "Books", "price": 28, "stock": 100, "description": "Unearthing the excellence in JavaScript", "imageUrl": "https://picsum.photos/seed/jsbook/400/300", "createdAt": "2024-01-25T10:00:00Z" },
+    { "id": 12, "name": "Garden Hose 50ft", "category": "Home & Garden", "price": 45, "stock": 60, "description": "Flexible and durable garden hose", "imageUrl": "https://picsum.photos/seed/hose/400/300", "createdAt": "2024-01-26T10:00:00Z" },
+    { "id": 13, "name": "Ceramic Plant Pot Set", "category": "Home & Garden", "price": 35, "stock": 90, "description": "Set of 3 decorative ceramic pots", "imageUrl": "https://picsum.photos/seed/pot/400/300", "createdAt": "2024-01-27T10:00:00Z" },
+    { "id": 14, "name": "LED Desk Lamp", "category": "Home & Garden", "price": 55, "stock": 120, "description": "Adjustable brightness LED lamp", "imageUrl": "https://picsum.photos/seed/lamp/400/300", "createdAt": "2024-01-28T10:00:00Z" },
+    { "id": 15, "name": "Yoga Mat Pro", "category": "Sports", "price": 65, "stock": 75, "description": "Non-slip premium yoga mat", "imageUrl": "https://picsum.photos/seed/yoga/400/300", "createdAt": "2024-01-29T10:00:00Z" },
+    { "id": 16, "name": "Dumbbell Set 20kg", "category": "Sports", "price": 120, "stock": 40, "description": "Adjustable dumbbell set for home gym", "imageUrl": "https://picsum.photos/seed/dumbbell/400/300", "createdAt": "2024-01-30T10:00:00Z" },
+    { "id": 17, "name": "Running Water Bottle", "category": "Sports", "price": 25, "stock": 200, "description": "BPA-free insulated water bottle", "imageUrl": "https://picsum.photos/seed/bottle/400/300", "createdAt": "2024-01-31T10:00:00Z" },
+    { "id": 18, "name": "iPad Pro 12.9", "category": "Electronics", "price": 1099, "stock": 25, "description": "Professional tablet with M2 chip", "imageUrl": "https://picsum.photos/seed/ipad/400/300", "createdAt": "2024-02-01T10:00:00Z" },
+    { "id": 19, "name": "Winter Jacket", "category": "Clothing", "price": 180, "stock": 45, "description": "Warm insulated winter jacket", "imageUrl": "https://picsum.photos/seed/jacket/400/300", "createdAt": "2024-02-02T10:00:00Z" },
+    { "id": 20, "name": "Tennis Racket", "category": "Sports", "price": 95, "stock": 55, "description": "Professional grade tennis racket", "imageUrl": "https://picsum.photos/seed/tennis/400/300", "createdAt": "2024-02-03T10:00:00Z" }
+  ],
+  "users": [
+    { "id": 1, "email": "admin@example.com", "name": "Admin User", "role": "admin", "avatarUrl": "https://i.pravatar.cc/100?u=admin" },
+    { "id": 2, "email": "user@example.com", "name": "John Doe", "role": "user", "avatarUrl": "https://i.pravatar.cc/100?u=user" },
+    { "id": 3, "email": "jane@example.com", "name": "Jane Smith", "role": "user", "avatarUrl": "https://i.pravatar.cc/100?u=jane" }
+  ]
+}

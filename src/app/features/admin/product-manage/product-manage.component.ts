@@ -2,7 +2,7 @@ import { Component, inject, OnInit, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ProductService } from '../../../core/services/product.service';
 import { Product } from '../../../core/models/product.model';
 import { SearchBarComponent } from '../../../shared/components/search-bar/search-bar.component';
@@ -109,6 +109,7 @@ const PAGE_SIZE = 10;
 })
 export class ProductManageComponent implements OnInit {
   private productService = inject(ProductService);
+  private translate = inject(TranslateService);
 
   loading = false;
   showDialog = false;
@@ -180,13 +181,14 @@ export class ProductManageComponent implements OnInit {
     this.editProduct = null;
   }
 
-  onProductSaved(_product: Product): void {
+  onProductSaved(product: Product): void {
     this.closeDialog();
     this.loadProducts();
   }
 
   deleteProduct(id: number): void {
-    if (confirm('Are you sure you want to delete this product?')) {
+    const msg = this.translate.instant('products.deleteConfirm') || 'Are you sure you want to delete this product?';
+    if (confirm(msg)) {
       this.productService.deleteProduct(id).subscribe(() => this.loadProducts());
     }
   }

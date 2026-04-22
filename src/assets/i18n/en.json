@@ -42,7 +42,8 @@
     "noProducts": "No products found",
     "id": "ID",
     "actions": "Actions",
-    "createdAt": "Created At"
+    "createdAt": "Created At",
+    "deleteConfirm": "Are you sure you want to delete this product?"
   },
   "cart": {
     "title": "Shopping Cart",

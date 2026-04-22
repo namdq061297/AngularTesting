@@ -30,7 +30,8 @@ export class AuthService {
     return this._currentUser.value?.role === 'admin';
   }
 
-  login(email: string, _password: string): boolean {
+  // Mock auth: password is accepted for any valid email (no real validation in this demo)
+  login(email: string, password: string): boolean {
     let user = MOCK_USERS.find(u => u.email === email);
     if (!user) {
       user = {
@@ -48,7 +49,8 @@ export class AuthService {
     return true;
   }
 
-  signup(email: string, _password: string, name: string): boolean {
+  // Mock signup: password is accepted without validation (demo only)
+  signup(email: string, password: string, name: string): boolean {
     const user: User = {
       id: Date.now(),
       email,
